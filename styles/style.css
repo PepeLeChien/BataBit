@@ -151,6 +151,7 @@ main {
     height: 360px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
+    margin-top: 4rem;
 }
 .main-currency-table > p,
 .main-commission-table > p {
@@ -232,4 +233,28 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     vertical-align: middle;
+}
+
+
+/* MAIN --> SECCION INTERCAMBIO -- ACTUALIZADO */
+
+
+.currency-table--date,
+.commission-table--date {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+.commission-table--date {
+    background-color: var(--soft-blue);
+}
+.currency-table--date > p,
+.commission-table--date > p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
 }
