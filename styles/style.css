@@ -355,6 +355,7 @@ main .main__beneficios {
 
 .main__bitcoin {
     width: 100%;
+    min-width: 320px;
     height: auto;
 }
 .main__bitcoin--imgContainer {
@@ -373,4 +374,66 @@ main .main__beneficios {
     line-height: 2.6rem;
     text-align: center;
     color: var(--just-white);
+}
+
+
+/* MAIN : SECCION DE PLANES */
+
+
+.main__plans {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.4rem;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--off-white);
+}
+.plans__title-container{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.plans__title-container h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+    margin-bottom: 20px;
+}
+.plans__title-container p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.plans__cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.plans__cards--anual {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 190px;
+    width: 60%;
+    max-width: 300px;
+    border: solid #000 2px;
+}
+.plans__cards--anual > p {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    line-height: 1.5rem;
 }
