@@ -395,7 +395,7 @@ main .main__beneficios {
 .plans__title-container{
     width: 100%;
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .plans__title-container h2 {
     font-size: 2.4rem;
@@ -413,14 +413,21 @@ main .main__beneficios {
 .plans__cards-container {
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    height: 320px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin-bottom: 30px;
 }
 .plans__cards--anual {
     position: relative;
+    scroll-snap-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    margin: 0 15px;
     min-width: 190px;
     width: 60%;
     max-width: 300px;
@@ -506,3 +513,49 @@ main .main__beneficios {
     background-size: cover;
 }
 
+
+/* FOOTER  */
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    padding: 40px 60px;
+    background-color: var(--bitcoin-orange);
+}
+.footer__directions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;    
+    height: 100%;
+    
+}
+.footer__directions p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.footer__logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer__logos .papa-logo {
+    display: inline-block;
+    width: 41px;
+    height: 24px;
+    background-image: url("../assets/icons/patata.svg");
+    background: no-repeat cover/center;
+}
+.footer__logos .name-logo {
+    display: inline-block;
+    font-size: .8rem;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
