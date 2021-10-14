@@ -7,3 +7,7 @@
 .tasas__container-comision {
     justify-content: initial;
 }
+.plans__cards-container {
+    height: 300px;
+    justify-content: center;
+}
