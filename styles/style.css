@@ -132,13 +132,19 @@ main .main__tasas {
 .tasas__container-comision {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items:center;
     justify-content: space-between;
     width: 60%;
-    min-width: 20rem;
+    min-width: 200px;
     max-width: 300px;
-    height: 20rem;
-    margin-top: 3rem;
+    height: auto;
+    margin: 0 auto; 
+    margin-top: 30px;
+}
+.tasas__tablas-container {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
 }
 .tasas__container-monedas h3,
 .tasas__container-comision h3 {
@@ -146,6 +152,8 @@ main .main__tasas {
     font-weight: 700;
     color: var(--bitcoin-orange);
     padding-left: 1rem;
+    margin: 0 auto;
+    margin-bottom: 15px;
 }
 .tasas__container-comision h3 {
     color: var(--secondary-blue);
@@ -160,8 +168,8 @@ main .main__tasas {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 55% 45%;
     width: 100%;
-    height: 16rem;
-    border-radius: .5rem;
+    height: 160px;
+    border-radius: 5px;
     background-color: var(--just-white);
 }
 .container-monedas__tabla p,
@@ -172,29 +180,29 @@ main .main__tasas {
 }
 .container-monedas__tabla--pleft,
 .container-comision__tabla--pleft {
-    padding-left: 1rem;
+    padding-left: 10px;
     font-family: Inter, sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
     color: #B5B0AC;
     grid-column: 1/2;
-    border-right: .2rem solid var(--off-white);
+    border-right: 2px solid var(--off-white);
     
 }
 .container-monedas__tabla--pright,
 .container-comision__tabla--pright {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
     font-family: Inter, sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
     color: #757575;
     grid-column: 2/3;
-    border-left: .2rem solid var(--off-white);
+    border-left: 2px solid var(--off-white);
 }
 .container-monedas__tabla--pright span {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 12px;
+    height: 12px;
     margin-left: auto;
     background-image: url("../assets/icons/arrow_down.svg");
     background-repeat: no-repeat;
@@ -207,17 +215,17 @@ main .main__tasas {
 .container-monedas__tabla >:nth-child(1),
 .container-comision__tabla >:nth-child(1) {    
     grid-row: 1/2;
-    border-bottom: .2rem solid var(--off-white);        
+    border-bottom: 2px solid var(--off-white);        
 }
 .container-monedas__tabla >:nth-child(2),
 .container-comision__tabla >:nth-child(2) {    
     grid-row: 2/3;
-    border-bottom: .2rem solid var(--off-white);        
+    border-bottom: 2px solid var(--off-white);        
 }
 .container-monedas__tabla >:nth-child(3),
 .container-comision__tabla >:nth-child(3) {
     grid-row: 3/4;
-    border-bottom: .2rem solid var(--off-white);       
+    border-bottom: 2px solid var(--off-white);       
 }
 .container-monedas__tabla >:nth-child(4),
 .container-comision__tabla >:nth-child(4) {   
@@ -226,17 +234,17 @@ main .main__tasas {
 .container-monedas__tabla >:nth-child(5),
 .container-comision__tabla >:nth-child(5) {
     grid-row: 1/2;
-    border-bottom: .2rem solid var(--off-white);
+    border-bottom: 2px solid var(--off-white);
 }
 .container-monedas__tabla >:nth-child(6),
 .container-comision__tabla >:nth-child(6) {   
     grid-row: 2/3;
-    border-bottom: .2rem solid var(--off-white);
+    border-bottom: 2px solid var(--off-white);
 }
 .container-monedas__tabla >:nth-child(7),
 .container-comision__tabla >:nth-child(7) {
     grid-row: 3/4;
-    border-bottom: .2rem solid var(--off-white);
+    border-bottom: 2px solid var(--off-white);
 }
 .container-monedas__tabla >:nth-child(8),
 .container-comision__tabla >:nth-child(8) {
@@ -249,14 +257,14 @@ main .main__tasas {
 
 .tasas__monedas-actualizado,
 .tasas__comision-actualizado {
-    width: 55%;
+    width: 90%;
     max-width: 220px;
-    margin-top: 2rem;
-    padding: .8rem;
+    margin-top: 20px;
+    padding: 8px;
     background-color: var(--soft-orange);
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
-    border-radius: .8rem;   
+    border-radius: 8px;   
     margin-bottom: 30px;
 }
 .tasas__comision-actualizado {
@@ -283,7 +291,7 @@ main .main__beneficios {
     height: auto;
     background-color: var(--warm-black);
     color: var(--just-white);
-    padding: 1.6rem;
+    padding: 16px;
 }
 
 .main__beneficios > img {
@@ -334,13 +342,13 @@ main .main__beneficios {
 .main__beneficios-container > section > img {
     width: 24px;
     height: 24px;
-    margin-bottom: .6rem;
+    margin-bottom: 6px;
 }
 .main__beneficios-container > section > h3 {
     font-size: 1.8rem;
     line-height: 1.8rem;
     font-weight: 700;
-    margin-bottom: .6rem;
+    margin-bottom: 6px;
 }
 .main__beneficios-container > section > p {
     font-size: 1.4rem;
@@ -360,8 +368,7 @@ main .main__beneficios {
 }
 .main__bitcoin--imgContainer {
     width: 100%;
-    max-width: 45rem;
-    height: 39rem;
+    height: 390px;
     background-image: url("../assets/imgs/background.png");
     background-repeat: no-repeat;
     background-size:cover;
@@ -386,7 +393,7 @@ main .main__beneficios {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1.4rem;
+    padding: 14px;
     width: 100%;
     min-width: 320px;
     height: auto;

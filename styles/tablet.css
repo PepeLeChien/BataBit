@@ -1,0 +1,9 @@
+.tasas__tablas-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+.tasas__container-monedas,
+.tasas__container-comision {
+    justify-content: initial;
+}
